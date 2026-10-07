@@ -1,3 +1,5 @@
+import { PaymentService } from '../payment/payment'
+
 export class Bank {
   private balance: number = 0
 
@@ -18,3 +20,8 @@ export class Bank {
     return this.balance
   }
 }
+const payment = new PaymentService(100)
+//payment.pay()
+console.log(payment.pay())
+//payment.pay()
+console.log(payment.pay())
